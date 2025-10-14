@@ -1,0 +1,242 @@
+body {
+    font-family: "Work Sans", "Noto Sans Armenian", sans-serif;
+    margin: 0;
+}
+
+.main-page {
+    width: 100%;
+    background: #FAF8F2;
+}
+
+.main-page-text-container {
+    border-radius: 40px;
+    background: #FAF8F2;
+    padding: 120px;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1170px;
+    position: relative;
+}
+
+.main-page-hello-text {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    color: #220901;
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+
+.main-page-title {
+    font-family: "Nunito";
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 112%;
+    color: #220901;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.main-page-descr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #220901;
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+
+.main-page-btn {
+    color: #FAF8F2;
+    border: none;
+    background: #DE5722;
+    border-radius: 8px;
+    padding: 12px 24px;
+    width: 172px;
+    height: 48px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    cursor: pointer;
+}
+
+.goit-logo {
+    position: absolute;
+    top:32px;
+    left: 120px;
+}
+
+.facts {
+    padding-top: 48px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.facts-title {
+font-family: "Nunito";
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 150%;
+    color: #220901;
+    margin-bottom: 32px;
+    margin-top: 0;
+}
+
+.facts-trezub {
+    margin-bottom: 24px;
+}
+
+.facts-descr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #220901;
+    width: 772px;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.facts-item {
+    width: calc((100% / 3) - (24px * 2) / 3);
+}
+
+.facts-item-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    text-align: center;
+    color: #220901;
+    margin-bottom: 32px;
+    margin-top: 0;
+}
+
+.facts-item-descr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #220901;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.form-container {
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #FAF8F2 0%, #0069AD 100%);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form {
+    background: #FAF8F2;
+    border-radius: 40px;
+    padding-top: 32px;
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+
+}
+
+.form-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    color: #220901;
+    margin-top: 0;
+    margin-bottom: 12px;
+
+}
+
+.form-trezub {
+    margin: 32px;
+}
+
+.form-descr {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #220901;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-field-label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #220901;
+    margin-bottom: 8px;
+}
+
+.form-field-name {
+    margin-bottom: 24px;
+}
+
+.form-input {
+    border: 1px solid #0069AD;
+    border-radius: 8px;
+    width: 450px;
+    height: 60px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #220901;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.form-btn {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FAF8F2;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 12px 24px;
+    width: 172px;
+    height: 48px;
+    background: #DE5722;
+    border: none;
+}
+
+.form-field-email {
+    margin-bottom: 48px;
+}
+
+.gus-anim {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin-bottom: auto;
+    margin-top: auto;
+    width: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
