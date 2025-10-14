@@ -88,7 +88,7 @@ font-family: "Nunito";
     margin-top: 0;
 }
 
-.facts-trezub {
+.facts-star {
     margin-bottom: 24px;
 }
 
@@ -162,7 +162,7 @@ font-family: "Nunito";
 
 }
 
-.form-trezub {
+.form-star {
     margin: 32px;
 }
 
@@ -239,4 +239,5 @@ font-family: "Nunito";
     width: 100%;
     z-index: 2;
     pointer-events: none;
+
 }
