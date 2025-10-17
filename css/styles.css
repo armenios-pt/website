@@ -1,243 +1,276 @@
-body {
-    font-family: "Work Sans", "Noto Sans Armenian", sans-serif;
-    margin: 0;
+/* Base / Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-.main-page {
-    width: 100%;
-    background: #FAF8F2;
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", "Work Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: #222;
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.main-page-text-container {
-    border-radius: 40px;
-    background: #FAF8F2;
-    padding: 120px;
-    box-sizing: border-box;
-}
-
+/* Generic wrapper used across sections */
 .wrapper {
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 1170px;
-    position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Main page */
+.main-page {
+  padding: 3.5rem 0;
+  background: linear-gradient(180deg, #ffffff 0%, #f7f9fb 100%);
+}
+
+.main-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2.25rem;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+/* Logo */
+.goit-logo {
+  width: 140px;
+  height: auto;
+  flex: 0 0 auto;
+}
+
+/* Text container */
+.main-page-text-container {
+  flex: 1 1 520px;
+  min-width: 220px;
 }
 
 .main-page-hello-text {
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 150%;
-    color: #220901;
-    margin-top: 0;
-    margin-bottom: 60px;
+  margin: 0 0 .4rem 0;
+  color: #666;
+  font-size: 0.95rem;
+  letter-spacing: 0.2px;
 }
 
 .main-page-title {
-    font-family: "Nunito";
-    font-weight: 900;
-    font-size: 64px;
-    line-height: 112%;
-    color: #220901;
-    margin-top: 0;
-    margin-bottom: 24px;
+  margin: 0 0 0.6rem 0;
+  font-size: 2.25rem;
+  line-height: 1.05;
+  color: #0f1724;
 }
 
 .main-page-descr {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    color: #220901;
-    margin-top: 0;
-    margin-bottom: 32px;
+  margin: 0 0 1.1rem 0;
+  color: #444;
+  line-height: 1.5;
+  font-size: 1rem;
 }
 
 .main-page-btn {
-    color: #FAF8F2;
-    border: none;
-    background: #DE5722;
-    border-radius: 8px;
-    padding: 12px 24px;
-    width: 172px;
-    height: 48px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    cursor: pointer;
+  background: #0b6b62;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.98rem;
 }
 
-.goit-logo {
-    position: absolute;
-    top:32px;
-    left: 120px;
+/* Illustration next to text */
+.main-illustration {
+  width: 40%;
+  max-width: 380px;
+  height: auto;
+  flex: 0 0 auto;
 }
 
+/* Facts section */
 .facts {
-    padding-top: 48px;
-    padding-bottom: 100px;
-    text-align: center;
-}
-
-.facts-title {
-font-family: "Nunito";
-    font-weight: 900;
-    font-size: 48px;
-    line-height: 150%;
-    color: #220901;
-    margin-bottom: 32px;
-    margin-top: 0;
+  text-align: center;
+  padding: 3rem 0;
 }
 
 .facts-star {
-    margin-bottom: 24px;
+  width: 48px;
+  height: auto;
+  display: inline-block;
+  margin-bottom: 0.6rem;
+}
+
+.facts-title {
+  margin: 0.4rem 0;
+  font-size: 1.6rem;
 }
 
 .facts-descr {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    text-align: center;
-    color: #220901;
-    width: 772px;
-    margin: auto;
-    margin-top: 0;
-    margin-bottom: 24px;
+  max-width: 820px;
+  margin: 0.6rem auto 1.6rem auto;
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Facts grid */
+.facts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  align-items: start;
+  padding-top: 1rem;
 }
 
 .facts-item {
-    width: calc((100% / 3) - (24px * 2) / 3);
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.35rem;
+  box-shadow: 0 4px 18px rgba(16,24,40,0.04);
+  text-align: left;
+}
+
+.facts-item img {
+  width: 56px;
+  height: auto;
+  margin-bottom: 0.7rem;
 }
 
 .facts-item-title {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 100%;
-    text-align: center;
-    color: #220901;
-    margin-bottom: 32px;
-    margin-top: 0;
+  margin: 0.35rem 0 0.45rem 0;
+  font-size: 1.05rem;
 }
 
 .facts-item-descr {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    text-align: center;
-    color: #220901;
-    margin-bottom: 0;
-    margin-top: 0;
+  margin: 0;
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.45;
 }
 
+/* Form / iframe */
 .form-container {
-    width: 100%;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    box-sizing: border-box;
-    background: linear-gradient(90deg, #FAF8F2 0%, #0069AD 100%);
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+  padding: 2.2rem 0 4rem 0;
+  background: #fafbfc;
 }
 
-.form {
-    background: #FAF8F2;
-    border-radius: 40px;
-    padding-top: 32px;
-    padding-right: 60px;
-    padding-left: 60px;
-    padding-bottom: 60px;
-    box-sizing: border-box;
-
+.iframe-container {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
-.form-title {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 100%;
-    color: #220901;
-    margin-top: 0;
-    margin-bottom: 12px;
-
+/* Make iframe responsive and preserve a good aspect ratio on mobile */
+.iframe-container .form {
+  width: 100%;
+  height: 720px; /* comfortable default */
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 6px 24px rgba(16,24,40,0.06);
 }
 
-.form-star {
-    margin: 32px;
+/* Images should never overflow */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
-.form-descr {
-    font-family: "Work Sans", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    color: #220901;
-    margin-top: 0;
-    margin-bottom: 24px;
+/* ----- Responsive breakpoints ----- */
+
+/* Tablet and small laptops */
+@media (max-width: 992px) {
+  .main-wrapper {
+    gap: 1.25rem;
+  }
+
+  .main-illustration {
+    width: 36%;
+    max-width: 320px;
+  }
+
+  .main-page-title {
+    font-size: 1.95rem;
+  }
+
+  .iframe-container .form {
+    height: 640px;
+  }
 }
 
-.form-field {
-    display: flex;
-    flex-direction: column;
+/* Mobile */
+@media (max-width: 720px) {
+  .wrapper {
+    padding: 1rem;
+  }
+
+  .main-wrapper {
+    flex-wrap: wrap;
     align-items: flex-start;
-}
+  }
 
-.form-field-label {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    color: #220901;
-    margin-bottom: 8px;
-}
+  .goit-logo {
+    width: 110px;
+    margin-bottom: 0.6rem;
+  }
 
-.form-field-name {
-    margin-bottom: 24px;
-}
-
-.form-input {
-    border: 1px solid #0069AD;
-    border-radius: 8px;
-    width: 450px;
-    height: 60px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    color: #220901;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    box-sizing: border-box;
+  /* Put the illustration below the text on small screens */
+  .main-illustration {
+    order: 3;
     width: 100%;
-}
+    max-width: 460px;
+    margin-top: 1rem;
+  }
 
-.form-btn {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    color: #FAF8F2;
-    cursor: pointer;
-    border-radius: 8px;
-    padding: 12px 24px;
-    width: 172px;
-    height: 48px;
-    background: #DE5722;
-    border: none;
-}
-
-.form-field-email {
-    margin-bottom: 48px;
-}
-
-.gus-anim {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    margin-bottom: auto;
-    margin-top: auto;
+  .main-page-text-container {
+    order: 2;
     width: 100%;
-    z-index: 2;
-    pointer-events: none;
+    min-width: 0;
+  }
 
+  .main-page-title {
+    font-size: 1.5rem;
+  }
+
+  .main-page-descr {
+    font-size: 0.98rem;
+  }
+
+  .main-page-btn {
+    width: 100%;
+    padding: 0.85rem;
+    font-size: 1rem;
+    border-radius: 8px;
+  }
+
+  .facts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .facts-item {
+    text-align: left;
+  }
+
+  /* Make the iframe taller on small screens so the form doesn't feel cut off */
+  .iframe-container .form {
+    height: calc(100vh * 0.9); /* nearly full viewport height for comfortable filling */
+    max-height: 1200px;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 380px) {
+  .goit-logo {
+    width: 88px;
+  }
+
+  .main-page-title {
+    font-size: 1.25rem;
+  }
+
+  .main-page-descr {
+    font-size: 0.95rem;
+  }
 }
