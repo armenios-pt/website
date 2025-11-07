@@ -103,10 +103,6 @@ img {
     margin: 0 0 32px;
 }
 
-.facts-star {
-    margin-bottom: 24px;
-}
-
 .facts-descr {
     font-weight: 400;
     font-size: 16px;
@@ -304,6 +300,7 @@ img {
     .main-page-text-container {
         padding: 30px 15px;
     }
+
 
 
 
