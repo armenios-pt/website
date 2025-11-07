@@ -2,64 +2,77 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Arménios em Portugal</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Arménios em Portugal</title>
 
-  <!-- Google Fonts (fallbacks included) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Armenian:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
 
-  <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
-  <section class="main-page">
-    <div class="wrapper main-wrapper">
-      <img src="img/logo black.svg" alt="logo" class="goit-logo" />
-      <div class="main-page-text-container">
-        <p class="main-page-hello-text">Welcome to the community!</p>
-        <h1 class="main-page-title">Arménios em Portugal</h1>
-        <p class="main-page-descr">We are a vibrant and growing community united by heritage, culture, and friendship. Whether you are Armenian by birth, marriage, or heart, here you’ll find a warm space to connect, celebrate, and grow together. Become part of our family by filling out the simple membership form. Let’s build something meaningful — together.</p>
-        <button class="main-page-btn" onclick="scrollToBlock('target-block')">Join us</button>
-      </div>
-      <img src="img/gus.svg" alt="Armenios" class="main-illustration" />
-    </div>
-  </section>
+    <section class="main-page">
+        <div class="wrapper">
+            <img src="img/logo black.svg" alt="logo" class="goit-logo" />
+            <div class="main-page-text-container">
+                <p class="main-page-hello-text">Welcome to the community!</p>
+                <h1 class="main-page-title">Arménios em Portugal</h1>
+                <p class="main-page-descr">
+                    We are a vibrant and growing community united by heritage, culture, and friendship. Whether you are
+                    Armenian by birth, marriage, or heart, here you’ll find a warm space to connect, celebrate, and grow
+                    together. Become part of our family by filling out the simple membership form. Let’s build something
+                    meaningful — together.
+                </p>
+                <button class="main-page-btn" onclick="scrollToBlock('target-block')">Join us</button>
+            </div>
+            <img src="img/gus.svg" alt="Armenios" class="main-image" />
+        </div>
+    </section>
 
-  <section class="facts">
-    <img src="img/star.svg" alt="star" class="facts-star" />
-    <h2 class="facts-title">What Brings Us Together</h2>
-    <p class="facts-descr">We are more than a community — we are a family that connects cultures, generations, and hearts. Our mission is to celebrate Armenian heritage in Portugal and strengthen the bonds that unite us.</p>
-    <div class="wrapper facts-grid">
-      <div class="facts-item">
-        <img src="img/gus1.svg" alt="Gus Fact 1" />
-        <h3 class="facts-item-title">Bridge between cultures</h3>
-        <p class="facts-item-descr">Connecting Armenians in Portugal and sharing our rich traditions</p>
-      </div>
-      <div class="facts-item">
-        <img src="img/gus2.svg" alt="Gus Fact 2" />
-        <h3 class="facts-item-title">Support network</h3>
-        <p class="facts-item-descr">Helping each other thrive personally and professionally</p>
-      </div>
-      <div class="facts-item">
-        <img src="img/gus3.svg" alt="Gus Fact 3" />
-        <h3 class="facts-item-title">Voice</h3>
-        <p class="facts-item-descr">Promoting Armenian heritage and stories within the wider Portuguese society</p>
-      </div>
-    </div>
-  </section>
+    <section class="facts">
+        <img src="img/star.svg" alt="star" class="facts-star" />
+        <h2 class="facts-title">What Brings Us Together</h2>
+        <p class="facts-descr">
+            We are more than a community — we are a family that connects cultures, generations, and hearts. Our mission
+            is to celebrate Armenian heritage in Portugal and strengthen the bonds that unite us.
+        </p>
 
-  <section class="form-container" id="target-block">
-    <div class="iframe-container">
-      <iframe class="form"
-        src="https://docs.google.com/forms/d/e/1FAIpQLSfew37JwhFyoHcBmiM9j9_fop1ot8FCtzMDWJV744S4tt_PBQ/viewform?embedded=true"
-        frameborder="0" marginheight="0" marginwidth="0" loading="lazy">Загрузка…</iframe>
-    </div>
-  </section>
+        <div class="wrapper facts-wrapper">
+            <div class="facts-item">
+                <img src="img/gus1.svg" alt="Gus Fact 1" />
+                <h3 class="facts-item-title">Bridge between cultures</h3>
+                <p class="facts-item-descr">Connecting Armenians in Portugal and sharing our rich traditions</p>
+            </div>
+            <div class="facts-item">
+                <img src="img/gus2.svg" alt="Gus Fact 2" />
+                <h3 class="facts-item-title">Support network</h3>
+                <p class="facts-item-descr">Helping each other thrive personally and professionally</p>
+            </div>
+            <div class="facts-item">
+                <img src="img/gus3.svg" alt="Gus Fact 3" />
+                <h3 class="facts-item-title">Voice</h3>
+                <p class="facts-item-descr">Promoting Armenian heritage and stories within the wider Portuguese society
+                </p>
+            </div>
+        </div>
+    </section>
 
-  <script src="js/form.js"></script>
+    <section class="form-container" id="target-block">
+        <iframe class="form"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSfew37JwhFyoHcBmiM9j9_fop1ot8FCtzMDWJV744S4tt_PBQ/viewform?embedded=true"
+            width="772" height="508" frameborder="0" marginheight="0" marginwidth="0">
+            Loading…
+        </iframe>
+    </section>
+
+    <script>
+        function scrollToBlock(id) {
+            document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
 </body>
-
-</html>
