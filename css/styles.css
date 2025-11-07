@@ -24,7 +24,7 @@ img {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    max-width: 1200px;
+    max-width: 100%;
     position: relative;
     padding: 60px 20px;
     box-sizing: border-box;
@@ -310,3 +310,4 @@ img {
     .main-page-text-container {
         padding: 30px 15px;
     }
+
